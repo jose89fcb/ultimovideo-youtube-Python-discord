@@ -1,5 +1,4 @@
-En el caso de que el canal de youtube tenga el nombre entrad a este link:
-<br>
+En el caso de que el canal de youtube tenga el nombre propio entrad aquí
 <br>
 
 https://www.youtube.com/feeds/videos.xml?user=AQUÍ EL NOMBRE DE VUESTRO YOUTUBER FAVORITO
