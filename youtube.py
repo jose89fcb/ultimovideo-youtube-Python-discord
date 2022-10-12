@@ -14,7 +14,7 @@ url_youtube = "https://www.youtube.com/watch?v="
 
 @bot.command()
 async def Youtube(ctx):
-    if ctx.message.channel.id in [1029771684280025098,1028165477782007838,1025238973288816690]: #Añadimos mas canales de vuestro servidor de discord
+    if ctx.message.channel.id in [1029771684280025098,1028165477782007838,1025238973288816690]: #Especificamos el ID del canal de discord para poder usar el comando
         
         response = requests.get(f"https://www.googleapis.com/youtube/v3/search?key={Api_key_Youtube}&channelId={Id_Canal_Youtube}&part=snippet,id&order=date&maxResults=20")
         video = response.json()["items"][0]["snippet"]["title"]
@@ -22,8 +22,7 @@ async def Youtube(ctx):
         await ctx.send(f'{video}\n\n{url_youtube}{id_video_youtube}') 
 
     else:
-        await ctx.send("No puedes usar el comando en este canal")
- 
+        await ctx.send("No puedes usar el comando en este canal") #Error si usamos el comando en otro canal
  
 
  
